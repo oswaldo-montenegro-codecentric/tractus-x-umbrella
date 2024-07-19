@@ -217,7 +217,7 @@ Choose to install one of the predefined subsets (currently in focus of the **E2E
 
 ```bash
 helm install \
-  --set centralidp.enabled=true,managed-identity-wallet.enabled=true,dataconsumerOne.enabled=true,tx-data-provider.enabled=true \
+  --set centralidp.enabled=true,managed-identity-wallet.enabled=true,managed-identity-wallet.seeding.enabled=true,dataconsumerOne.enabled=true,tx-data-provider.enabled=true \
   umbrella tractusx-dev/umbrella \
   --namespace umbrella \
   --create-namespace
